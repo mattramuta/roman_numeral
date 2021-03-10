@@ -2,13 +2,12 @@ package com.example;
 
 import org.junit.Test;
 
-import static org.hamcrest.CoreMatchers.equalTo;
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 public class MainTest {
 
     @Test
     public void returnsHelloWorld() {
-        assertThat(Main.someMethod(), equalTo("hello world"));
+        assertEquals(Main.someMethod(), "hello world");
     }
 }
